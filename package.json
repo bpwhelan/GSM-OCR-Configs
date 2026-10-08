@@ -1,0 +1,11 @@
+{
+  "name": "gsm-ocr-configs",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.18" },
+  "scripts": {
+    "test": "node --experimental-strip-types --test tests/*.test.mjs",
+    "publish:catalog": "node --experimental-strip-types scripts/publish.mjs",
+    "validate": "node --experimental-strip-types scripts/validate.mjs"
+  }
+}
