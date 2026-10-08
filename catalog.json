@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T18:26:43.107Z",
+  "generatedAt": "2026-10-08T19:25:36.574Z",
   "profiles": [
     {
       "id": "profile-1",
@@ -226,7 +226,7 @@
       "issueNumber": 2,
       "author": "bpwhelan",
       "revision": "e7b6f684df1191e5880c0f0d2012b61b1d36dd3f3012c7e7eb17bee21a84d234",
-      "updatedAt": "2026-10-08T18:26:32Z",
+      "updatedAt": "2026-10-08T18:26:45Z",
       "profile": {
         "schemaVersion": 1,
         "name": "Dialogue and choices",
