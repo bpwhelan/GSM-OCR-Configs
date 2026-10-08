@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T18:13:44.468Z",
+  "generatedAt": "2026-10-08T18:26:43.107Z",
   "profiles": [
     {
       "id": "profile-1",
       "issueNumber": 1,
       "author": "bpwhelan",
       "revision": "f290788b1b30c99731c155137e9be9d4479437b441f7dd08ab213b4c5614ef7a",
-      "updatedAt": "2026-10-08T18:13:33Z",
+      "updatedAt": "2026-10-08T18:13:46Z",
       "profile": {
         "schemaVersion": 1,
         "name": "Dialogue and choices",
@@ -20,6 +20,225 @@
           "language": "ja"
         },
         "notes": "",
+        "resolution": {
+          "width": 2560,
+          "height": 1440
+        },
+        "areas": [
+          {
+            "coordinates": [
+              0.4234375,
+              0.9055555555555556,
+              0.1421875,
+              0.05
+            ],
+            "is_excluded": false,
+            "is_secondary": true,
+            "is_exclusive": false,
+            "is_black_hole": false
+          },
+          {
+            "coordinates": [
+              0.3640625,
+              0.9083333333333333,
+              0.28125,
+              0.04722222222222222
+            ],
+            "is_excluded": false,
+            "is_secondary": true,
+            "is_exclusive": false,
+            "is_black_hole": false
+          },
+          {
+            "coordinates": [
+              0.3140625,
+              0.16111111111111112,
+              0.3796875,
+              0.6972222222222222
+            ],
+            "is_excluded": false,
+            "is_secondary": true,
+            "is_exclusive": false,
+            "is_black_hole": false
+          },
+          {
+            "coordinates": [
+              0.2265625,
+              0.8305555555555556,
+              0.603125,
+              0.14722222222222223
+            ],
+            "is_excluded": false,
+            "is_secondary": false,
+            "is_exclusive": false,
+            "is_black_hole": false
+          },
+          {
+            "coordinates": [
+              0.6484375,
+              0.9138888888888889,
+              0.0515625,
+              0.041666666666666664
+            ],
+            "is_excluded": false,
+            "is_secondary": true,
+            "is_exclusive": false,
+            "is_black_hole": false
+          },
+          {
+            "coordinates": [
+              0.3,
+              0.9166666666666666,
+              0.0625,
+              0.03333333333333333
+            ],
+            "is_excluded": false,
+            "is_secondary": true,
+            "is_exclusive": false,
+            "is_black_hole": false
+          },
+          {
+            "coordinates": [
+              0.4,
+              0.8527777777777777,
+              0.1921875,
+              0.03888888888888889
+            ],
+            "is_excluded": false,
+            "is_secondary": true,
+            "is_exclusive": false,
+            "is_black_hole": false
+          },
+          {
+            "coordinates": [
+              0.3359375,
+              0.9083333333333333,
+              0.0453125,
+              0.04722222222222222
+            ],
+            "is_excluded": false,
+            "is_secondary": true,
+            "is_exclusive": false,
+            "is_black_hole": false
+          },
+          {
+            "coordinates": [
+              0.640625,
+              0.9055555555555556,
+              0.0609375,
+              0.05
+            ],
+            "is_excluded": false,
+            "is_secondary": true,
+            "is_exclusive": false,
+            "is_black_hole": false
+          },
+          {
+            "coordinates": [
+              0.0203125,
+              0.5888888888888889,
+              0.2484375,
+              0.06944444444444445
+            ],
+            "is_excluded": false,
+            "is_secondary": false,
+            "is_exclusive": true,
+            "is_black_hole": false
+          },
+          {
+            "coordinates": [
+              0.0421875,
+              0.875,
+              0.2515625,
+              0.07777777777777778
+            ],
+            "is_excluded": false,
+            "is_secondary": false,
+            "is_exclusive": true,
+            "is_black_hole": false
+          },
+          {
+            "coordinates": [
+              0.059375,
+              0.6111111111111112,
+              0.053125,
+              0.03888888888888889
+            ],
+            "is_excluded": false,
+            "is_secondary": true,
+            "is_exclusive": false,
+            "is_black_hole": false
+          },
+          {
+            "coordinates": [
+              0.109375,
+              0.6,
+              0.040625,
+              0.03333333333333333
+            ],
+            "is_excluded": false,
+            "is_secondary": true,
+            "is_exclusive": false,
+            "is_black_hole": false
+          },
+          {
+            "coordinates": [
+              0.084375,
+              0.2916666666666667,
+              0.0625,
+              0.025
+            ],
+            "is_excluded": false,
+            "is_secondary": false,
+            "is_exclusive": false,
+            "is_black_hole": true
+          },
+          {
+            "coordinates": [
+              0.4640625,
+              0.08055555555555556,
+              0.070703125,
+              0.041666666666666664
+            ],
+            "is_excluded": false,
+            "is_secondary": false,
+            "is_exclusive": false,
+            "is_black_hole": true
+          }
+        ],
+        "settings": {
+          "scanRate": 0.2,
+          "base_scale": 1,
+          "furigana_filter_sensitivity": 13,
+          "ocr1": "meiki_text_detector",
+          "ocr2": "glens",
+          "twoPassOCR": true,
+          "optimize_second_scan": true
+        }
+      },
+      "verification": {
+        "works": 0,
+        "needsWork": 0
+      }
+    },
+    {
+      "id": "profile-2",
+      "issueNumber": 2,
+      "author": "bpwhelan",
+      "revision": "e7b6f684df1191e5880c0f0d2012b61b1d36dd3f3012c7e7eb17bee21a84d234",
+      "updatedAt": "2026-10-08T18:26:32Z",
+      "profile": {
+        "schemaVersion": 1,
+        "name": "Dialogue and choices",
+        "game": {
+          "title": "Tales of ARISE",
+          "executableNames": [
+            "Tales of Arise.exe"
+          ],
+          "platform": "windows",
+          "language": "ja"
+        },
+        "notes": "Test revision?",
         "resolution": {
           "width": 2560,
           "height": 1440
