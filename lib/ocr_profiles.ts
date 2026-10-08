@@ -163,13 +163,18 @@ export function portableAreas(value: unknown, resolution: Resolution): PortableO
 export function applySharedOcrSettings<T extends object>(current: T, settings: SharedOcrSettings | undefined, apply: boolean): T & SharedOcrSettings & { advancedMode?: boolean; scanRate_advanced?: number; ocr1_advanced?: string; ocr2_advanced?: string } {
     if (apply !== true || !settings) return { ...current };
     const patch = sharedOcrSettings(settings);
+    const currentValues = current as Record<string, unknown>;
+    const selectsAdvancedMode = !!(patch.ocr1 || patch.ocr2 || patch.scanRate !== undefined);
+    const firstEngine = patch.ocr1 ?? currentValues.ocr1;
+    const secondEngine = patch.ocr2 ?? currentValues.ocr2;
+    const scanRate = patch.scanRate ?? currentValues.scanRate;
     return {
         ...current, ...patch,
         // Advanced mode keeps shared engines and scan rate effective after renderer saves.
-        ...(patch.ocr1 || patch.ocr2 || patch.scanRate !== undefined ? { advancedMode: true } : {}),
-        ...(patch.ocr1 ? { ocr1_advanced: patch.ocr1 } : {}),
-        ...(patch.ocr2 ? { ocr2_advanced: patch.ocr2 } : {}),
-        ...(patch.scanRate !== undefined ? { scanRate_advanced: patch.scanRate } : {}),
+        ...(selectsAdvancedMode ? { advancedMode: true } : {}),
+        ...(selectsAdvancedMode && typeof firstEngine === 'string' ? { ocr1_advanced: firstEngine } : {}),
+        ...(selectsAdvancedMode && typeof secondEngine === 'string' ? { ocr2_advanced: secondEngine } : {}),
+        ...(selectsAdvancedMode && typeof scanRate === 'number' ? { scanRate_advanced: scanRate } : {}),
     };
 }
 function revision(value: unknown): string {
